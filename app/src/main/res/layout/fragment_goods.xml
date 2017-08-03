@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:text="其他商品"
+            android:textSize="@dimen/textsize_12"
+            android:layout_gravity="center"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户登录"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/btn_manage"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_12"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="管理"
+            android:layout_marginLeft="82dp"/>
+    </RelativeLayout>
+
+    <com.mgz.nztsolder.nztsolder.view.PullToRefreshGridView
+        android:id="@+id/gv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:numColumns="3">
+
+    </com.mgz.nztsolder.nztsolder.view.PullToRefreshGridView>
+
+</RelativeLayout>

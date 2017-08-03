@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grass_green"
+        android:layout_marginTop="30dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="66dp">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="全部商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_all"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grass_green"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_normal"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="普通商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_normal"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/grass_green"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_zhekou"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="折扣商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_zhekou"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/grass_green"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_manjian"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="满减商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_manjian"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/grass_green"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tuangou"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="团购商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_tuangou"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/grass_green"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bind"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grass_green"
+            android:textSize="18sp"
+            android:text="捆绑商品"/>
+
+        <LinearLayout
+            android:id="@+id/layout_bind"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grass_green"
+            android:visibility="gone"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/gray">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="添加商品"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="122dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="商品种类："
+                    android:id="@+id/textView" />
+
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:entries="@array/types"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="商品名称：" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/register_edittext"
+                    android:hint="请填写要添加的商品名称"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="商品价格：" />
+
+                <EditText
+                    android:id="@+id/et_price"
+                    style="@style/register_edittext"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元  "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll"
+                android:visibility="visible">
+                <ImageView
+                    style="@style/register_star"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="商品重量：" />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    style="@style/register_edittext"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kg  "/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="单价：" />
+
+                <EditText
+                    android:id="@+id/et_avg_pri"
+                    style="@style/register_edittext"
+                    android:layout_height="24dp"
+                    android:textColor="@color/red_cart"
+                    android:background="@color/gray"
+                    android:layout_width="64dp"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_volume"
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="商品体积："
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_length"
+                    style="@style/register_edittext"
+                    android:layout_width="44dp"
+                    android:textSize="14sp"
+                    android:hint="长"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm *"/>
+
+                <EditText
+                    android:id="@+id/et_width"
+                    style="@style/register_edittext"
+                    android:layout_width="44dp"
+                    android:textSize="14sp"
+                    android:hint="宽"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm *"/>
+
+                <EditText
+                    android:id="@+id/et_height"
+                    style="@style/register_edittext"
+                    android:layout_width="44dp"
+                    android:textSize="14sp"
+                    android:hint="高"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"
+                    android:layout_marginLeft="32dp"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="分类：" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    style="@style/register_birthday"
+                    android:layout_width="@dimen/width_76"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+                <ImageView
+                    style="@style/register_star"
+                    android:layout_marginLeft="32dp"/>
+
+                <TextView
+                    style="@style/register_text"
+                    android:text="品牌：" />
+
+                <TextView
+                    android:id="@+id/tv_brand"
+                    style="@style/register_birthday"
+                    android:layout_width="@dimen/width_76"/>
+
+                <CheckBox
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他："/>
+
+                <EditText
+                    android:id="@+id/et_brand_other"
+                    style="@style/register_edittext"
+                    android:layout_width="90dp"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+
+                <TextView
+                    android:layout_marginLeft="32dp"
+                    style="@style/register_text"
+                    android:text="条形码：" />
+
+                <EditText
+                    android:id="@+id/et_scan"
+                    style="@style/register_edittext"
+                    android:hint="请输入或扫描商品条形码"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_scan"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫描"
+                    android:textColor="@color/grass_green"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    style="@style/register_text"
+                    android:text="商品介绍：" />
+
+                <EditText
+                    android:id="@+id/et_describe"
+                    style="@style/register_edittext"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:hint="请填写商品介绍"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                style="@style/register_ll">
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    style="@style/register_text"
+                    android:text="商品图片：" />
+
+                <TextView
+                    android:id="@+id/tv_pic"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击选择图片"
+                    android:gravity="center"
+                    android:textColor="@color/grass_green"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/btn_login_style"
+                android:background="@color/grass_green"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="添加商品"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_select"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/gray">
+
+    </ListView>
+
+</RelativeLayout>
